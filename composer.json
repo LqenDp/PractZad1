@@ -1,0 +1,22 @@
+{
+    "name": "dor-ju/pop-it-mvc",
+    "description": "MVC",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LqenDp",
+            "email": "oorzaksancaj7@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+           "Src\\": "core/Src/",
+           "": "app/"
+        }
+    }
+}
