@@ -21,6 +21,10 @@
     <button type="submit">Войти</button>
 </form>
 
+<p style="margin-top: 20px;">
+    <a href="#" style="color: #3498db;">Забыли пароль?</a>
+</p>
+
 <p>
-    Нет аккаунта? <a href="<?= app()->route->getUrl('/register') ?>">Зарегистрироваться</a>
+    Ещё нет аккаунта? <a href="<?= app()->route->getUrl('/register') ?>">Зарегистрироваться</a>
 </p>

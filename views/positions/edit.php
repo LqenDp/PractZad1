@@ -1,3 +1,6 @@
+<?php
+/** @var \Model\Position $position */
+?>
 <h2>Редактирование должности</h2>
 
 <form method="post">

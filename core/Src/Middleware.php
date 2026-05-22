@@ -37,7 +37,7 @@ class Middleware
             $args = explode(':', $middleware);
             $middlewareName = $args[0];
             $middlewareParam = $args[1] ?? null;
-            
+
             if (isset($routeMiddleware[$middlewareName])) {
                 (new $routeMiddleware[$middlewareName])->handle($request, $middlewareParam);
             }

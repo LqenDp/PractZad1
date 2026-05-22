@@ -10,4 +10,7 @@ if (!app()->auth::check()):
        <label>Пароль <input type="password" name="password"></label>
        <button>Войти</button>
    </form>
+    <p style="margin-top: 20px;">
+        Нет аккаунта? <a href="<?= app()->route->getUrl('/signup') ?>">Зарегистрироваться</a>
+    </p>
 <?php endif;

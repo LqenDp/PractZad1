@@ -1,3 +1,6 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $positions */
+?>
 <h2>Добавление сотрудника</h2>
 
 <?php if (!empty($_SESSION['errors'])): ?>

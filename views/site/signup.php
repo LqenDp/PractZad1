@@ -1,8 +1,27 @@
-<h2>Регистрация нового пользователя</h2>
-<h3><?= $message ?? ''; ?></h3>
+<h2>Регистрация</h2>
+
+<?php if (!empty($message)): ?>
+    <p style="color: <?= strpos($message, 'успешно') !== false ? 'green' : 'red' ?>;">
+        <?= $message ?>
+    </p>
+<?php endif; ?>
+
 <form method="post">
-    <label>Имя <input type="text" name="name"></label><br>
-    <label>Логин <input type="text" name="login"></label><br>
-    <label>Пароль <input type="password" name="password"></label><br>
-    <button>Зарегистрироваться</button>
+    <p>
+        <label>Имя:</label><br>
+        <input type="text" name="name" required>
+    </p>
+    <p>
+        <label>Login:</label><br>
+        <input type="text" name="login" required>
+    </p>
+    <p>
+        <label>Пароль:</label><br>
+        <input type="password" name="password" required>
+    </p>
+    <button type="submit">Зарегистрироваться</button>
 </form>
+
+<p>
+    Уже есть аккаунт? <a href="<?= app()->route->getUrl('/login') ?>">Войти</a>
+</p>

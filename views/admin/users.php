@@ -1,3 +1,6 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $users */
+?>
 <h2>Управление пользователями</h2>
 
 <?php if (!empty($_SESSION['message'])): ?>

@@ -1,3 +1,6 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $positions */
+?>
 <h2>Должности</h2>
 
 <?php if (app()->auth::user()->role === 'admin'): ?>
@@ -21,10 +24,10 @@
         <?php foreach ($positions as $position): ?>
         <tr>
             <td><?= $position->UniqueID ?></td>
-            </td><?= htmlspecialchars($position->title) ?></td>
+            <td><?= htmlspecialchars($position->title) ?></td>
             <td><?= number_format($position->salary_base, 2) ?> руб.</td>
-            <td><?= $position->bonus_seniority ?>%</td>
-            <td><?= $position->bonus_hazard ?>%</td>
+            <td><?= $position->bonus_seniority ?>%</?= ?>
+            <td><?= $position->bonus_hazard ?>%</?= ?>
             <?php if (app()->auth::user()->role === 'admin'): ?>
                 <td>
                     <a href="<?= app()->route->getUrl('/positions/' . $position->UniqueID . '/edit') ?>">Ред.</a>

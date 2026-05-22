@@ -34,7 +34,7 @@
     </div>
 
     <div style="text-align: center; padding: 10px; border-top: 1px solid #ccc; margin-top: 20px;">
-        Адрес электронной почты: accounting@example.com
+        Адрес электронной почты: @gmail.com
     </div>
 
 <?php else: ?>

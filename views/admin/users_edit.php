@@ -1,3 +1,7 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $employees */
+/** @var \Illuminate\Database\Eloquent\Collection $user */
+?>
 <h2>Редактирование пользователя</h2>
 
 <form method="post">

@@ -1,3 +1,6 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $employees */
+?>
 <h2>Список сотрудников</h2>
 
 <table border="1" cellpadding="8" cellspacing="0">

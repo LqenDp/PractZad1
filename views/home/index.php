@@ -1,3 +1,11 @@
+<?php
+/** @var \Illuminate\Database\Eloquent\Collection $employees */
+/** @var int $employee_count */
+/** @var float $monthly_accruals */
+/** @var float $monthly_deductions */
+/** @var int $total_pages */
+/** @var int $current_page */
+?>
 <h2>Главная страница</h2>
 
 <h3>Сотрудники: <?= $employee_count ?? 0 ?></h3>
@@ -33,12 +41,6 @@
         <?php endif; ?>
     </tbody>
 </table>
-
-<p>
-    <?php for ($i = 1; $i <= $total_pages; $i++): ?>
-        <a href="?page=<?= $i ?>"><?= $i ?></a>
-    <?php endfor; ?>
-</p>
 
 <?php if (app()->auth::user()->role === 'admin' || app()->auth::user()->role === 'accountant'): ?>
     <p><a href="<?= app()->route->getUrl('/employees/create') ?>">+ Добавить сотрудника</a></p>

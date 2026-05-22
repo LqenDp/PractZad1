@@ -1,3 +1,7 @@
+<?php
+/** @var \Model\Employee $employee */
+/** @var \Illuminate\Database\Eloquent\Collection $positions */
+?>
 <h2>Редактирование сотрудника</h2>
 
 <form method="post">
